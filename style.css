@@ -1,0 +1,131 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --dark-blue-card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    background-color: var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container {
+    max-width: 290px;
+    min-height: 495px;
+    background-color: var(--dark-blue-card-BG);
+    padding: 1.3em;
+    border-radius: 1em;
+    font-family: "Outfit",sans-serif;
+}
+.container a{
+    color: var(--White);
+    text-decoration: none;
+}
+.container a h3{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.container a h3:hover{
+    color: var(--Cyan);
+}
+.container p{
+    color: var(--Soft-blue);
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+.image{
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
+.image #view{
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    visibility: hidden;
+}
+.container .image #img{
+
+height: 100%;
+    width: 100%;
+    border-radius: 0.5em;
+}
+.image:hover{
+    opacity: 0.8;
+    background-color: var(--Cyan);
+    border-radius: 0.5em;
+    cursor: pointer;
+    #img{
+        opacity: 0.4;
+    }
+    #view{
+        visibility: visible;
+    }
+}
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second  .img-1 img{
+    width: 0.8em;
+    margin-right:0.5em;
+}
+.second .img-1 h5{
+    color: var(--Cyan);
+}
+.second .img-2 img{
+    width: 1em;
+    margin-right: 0.5em;
+}
+.second .img-2 p{
+    color: var(--Soft-blue);
+    text-decoration: none;
+    margin: 0;
+}
+.second h5{
+    display: inline;
+    margin: 0;
+}
+hr{
+    border: 0.01em solid var(--line);
+    margin-block: 1em;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+}
+.avatar p{
+    color: var(--Soft-blue);
+    margin-left: 0.7em;
+    margin-block: 0;
+}
+.avatar img{
+    max-width:30px;
+    border-radius: 50%;
+    border: 0.1em solid var(--White);
+}
+.avatar a{
+    color: var(--White);
+    text-decoration: none;
+}
+.avatar a:hover{
+    color: var(--Cyan);
+}
